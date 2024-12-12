@@ -18,14 +18,17 @@ const dom = (function cacheDom () {
 
 const renderHtml = (function () {
     const homePage = function(){
+        clearDisplay();
         dom.content.appendChild(homePara);
     }
 
     const menuPage = function(){
+        clearDisplay();
         dom.content.appendChild(menuPara);
     }
 
     const aboutPage = function(){
+        clearDisplay();
         dom.content.appendChild(aboutPara);
     }
 
@@ -42,3 +45,7 @@ const addEventListeners = (function (){
     dom.menuBtn.addEventListener('click', renderHtml.menuPage);
     dom.aboutBtn.addEventListener('click', renderHtml.aboutPage);
 })()
+
+function clearDisplay (){
+    content.innerText = ''; 
+}
