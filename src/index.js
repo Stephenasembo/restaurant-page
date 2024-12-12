@@ -2,19 +2,31 @@ import { homePara } from './initial-page'
 import { menuPara } from './menu';
 import { aboutPara } from './about';
 
-const content = document.querySelector('#content');
+const dom = (function cacheDom () {
+    const content = document.querySelector('#content');
+    const homeBtn = document.querySelector('#home');
+    const menuBtn = document.querySelector('#menu');
+    const aboutBtn = document.querySelector('#about');
+
+    return {
+        content,
+        homeBtn,
+        menuBtn,
+        aboutBtn,
+    }
+})()
 
 const renderHtml = (function () {
     const homePage = function(){
-        content.appendChild(homePara);
+        dom.content.appendChild(homePara);
     }
 
     const menuPage = function(){
-        content.appendChild(menuPara);
+        dom.content.appendChild(menuPara);
     }
 
     const aboutPage = function(){
-        content.appendChild(aboutPara);
+        dom.content.appendChild(aboutPara);
     }
 
 
@@ -24,4 +36,3 @@ const renderHtml = (function () {
         aboutPage,
     }
 })()
-
