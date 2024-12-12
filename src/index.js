@@ -36,3 +36,9 @@ const renderHtml = (function () {
         aboutPage,
     }
 })()
+
+const addEventListeners = (function (){
+    dom.homeBtn.addEventListener('click', renderHtml.homePage);
+    dom.menuBtn.addEventListener('click', renderHtml.menuPage);
+    dom.aboutBtn.addEventListener('click', renderHtml.aboutPage);
+})()
