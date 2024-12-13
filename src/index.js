@@ -1,6 +1,7 @@
 import { homeContent } from './initial-page'
 import { menuContent } from './menu';
 import { aboutContent } from './about';
+import './styles.css'
 
 const dom = (function cacheDom () {
     const content = document.querySelector('#content');
