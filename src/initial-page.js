@@ -1,4 +1,4 @@
-import restaurantImage from './restaurant.jpg'
+import restaurantImage from './restaurant.jpg';
 
 const homeContent = document.createElement('div');
 const image = document.createElement('img');
