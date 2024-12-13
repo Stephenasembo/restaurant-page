@@ -5,6 +5,9 @@ const homeContainer = document.createElement('div');
 const image = document.createElement('img');
 image.src = restaurantImage;
 image.alt = 'Interior of an empty restaurant';
+const title = document.createElement('h2');
+title.textContent = 'Rapster Restaurant';
+title.setAttribute('class', 'title')
 
 const homePara = document.createElement('p');
 
@@ -25,6 +28,7 @@ homeContainer.setAttribute('class', 'homeContainer');
 homeContainer.appendChild(image);
 homeContainer.appendChild(homePara);
 
+homeContent.appendChild(title);
 homeContent.appendChild(homeContainer);
 homeContent.appendChild(footer)
 
