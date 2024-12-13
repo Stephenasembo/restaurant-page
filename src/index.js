@@ -1,6 +1,6 @@
-import { homePara } from './initial-page'
-import { menuPara } from './menu';
-import { aboutPara } from './about';
+import { homeContent } from './initial-page'
+import { menuContent } from './menu';
+import { aboutContent } from './about';
 
 const dom = (function cacheDom () {
     const content = document.querySelector('#content');
@@ -19,17 +19,17 @@ const dom = (function cacheDom () {
 const renderHtml = (function () {
     const homePage = function(){
         clearDisplay();
-        dom.content.appendChild(homePara);
+        dom.content.appendChild(homeContent);
     }
 
     const menuPage = function(){
         clearDisplay();
-        dom.content.appendChild(menuPara);
+        dom.content.appendChild(menuContent);
     }
 
     const aboutPage = function(){
         clearDisplay();
-        dom.content.appendChild(aboutPara);
+        dom.content.appendChild(aboutContent);
     }
 
 

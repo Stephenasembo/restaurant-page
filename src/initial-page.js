@@ -1,3 +1,5 @@
+const homeContent = document.createElement('div');
+
 const homePara = document.createElement('p');
 
 homePara.textContent = `
@@ -6,5 +8,5 @@ homePara.textContent = `
             We serve both indegenous and exotic foods.
             Pay us a visit and you are bound to enjoy.
 `
-
-export {homePara}
+homeContent.appendChild(homePara);
+export {homeContent}

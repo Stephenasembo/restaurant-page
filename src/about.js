@@ -1,3 +1,4 @@
+const aboutContent = document.createElement('div')
 const aboutPara = document.createElement('p');
 
 aboutPara.innerText = `
@@ -9,4 +10,6 @@ aboutPara.innerText = `
     Book a reservation withus through any form of contact
 `;
 
-export { aboutPara };
+aboutContent.appendChild(aboutPara);
+
+export { aboutContent };

@@ -1,3 +1,4 @@
+const menuContent = document.createElement('div')
 const menuPara = document.createElement('p');
 
 menuPara.innerHTML = `
@@ -18,4 +19,6 @@ menuPara.innerHTML = `
     </ul>
     `;
 
-export { menuPara };
+menuContent.appendChild(menuPara);
+
+export { menuContent };
